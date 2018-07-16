@@ -4,7 +4,6 @@ Try by using for/while
 1) Write a programe to find the given number if prime or not.
 function prime(n)
 {
-
   if (n===1)
   {
     return false;
