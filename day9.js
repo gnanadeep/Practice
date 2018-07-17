@@ -7,7 +7,14 @@ var emp4;
 
 // Write a function  to take emp as parameter and print the city if
 //  exists else print as "employee city is not available."
-
+function cityCheck(emp){
+    if(emp && emp.address && emp.address.city){
+    return emp.address.city;
+    }else{
+    return "employee city is not available.";
+    }
+    
+    }
 // 2) List out truthy / falsy values  from following
  var a;
  console.log(!a); // true
