@@ -9,3 +9,19 @@ console.log(name,age);
 }
 return display();
 }
+
+
+function operations() {
+debugger;
+    let counter = 0;
+	 this.getValue = function() {
+        return this.counter;
+    };
+
+    this.setValue = function(counter) {
+        this.counter = counter;
+    };
+
+	
+      return counter; 
+}
