@@ -1,16 +1,24 @@
  // 1) Create a closure function as a class to create employee object .(properties and all functions should be private).
  // write method in the above function which can access to outer world as it can access the all private members of the 
-
-function Employee(){
-var name = "rahul";
-var age = 25;
-this.displayName = function(){
+ var Emp = (function() {
+  var name = "king"
+  var age = 25
+    function Emp() {
+        this.getName = function() {
             return name;
-            }
-this.displayAge = function(){
-            return age;
-            }
-}
+        };
+      this.getAge = function(){
+        return age;
+      }
+    }
+
+    return Emp;
+}());
+var e = new Emp();
+console.log(e.getName());
+console.log(e.getAge());
+
+
 
 var emp = new Employee();
 console.log(emp.displayName()); // age
