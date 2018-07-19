@@ -3,7 +3,7 @@
  var Emp = (function() {
   var name = "king"
   var age = 25
-    function Emp() {
+    function display() {
         this.getName = function() {
             return name;
         };
@@ -12,7 +12,7 @@
       }
     }
 
-    return Emp;
+    return display;
 }());
 var e = new Emp();
 console.log(e.getName());
