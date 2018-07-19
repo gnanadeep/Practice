@@ -2,13 +2,19 @@
  // write method in the above function which can access to outer world as it can access the all private members of the 
 
 function Employee(){
-let name = "rahul";
-let age = 25;
-function display(){
-console.log(name,age);
+var name = "rahul";
+var age = 25;
+this.displayName = function(){
+            return name;
+            }
+this.displayAge = function(){
+            return age;
+            }
 }
-return display();
-}
+
+var emp = new Employee();
+console.log(emp.displayName()); // age
+console.log(emp.displayAge()); // 25
 
 // Write a closure which has a private variable initialised to 0.
 //  Return an object which contains four methods each takes a paramter and perform a 
