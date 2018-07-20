@@ -1,4 +1,4 @@
-Day 3;
+// Day 3;
 var a = 2;
 typeof a; // number
 
@@ -9,11 +9,11 @@ a = true;
 typeof a; // boolean
   
 a = [];
-typesof a;// object
+typeof a;// object
 
 a = {};
-typesof a;//object
+typeof a;//object
 
 a = function(){
 }
-typesof a;//function
+typeof a;//function

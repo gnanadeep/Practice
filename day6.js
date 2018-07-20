@@ -31,7 +31,16 @@ function sumnaturalno(n)
         return (sum);
     }
 // 3) Write a programe to print febonacci series up to a sepecified no of elemnets.
+
 // 4) Write a programe to find sum of squares of first n natural numbers.
+function squareSum(n){
+  var mySum = 0;
+  for (var i=0; i<=n; i++) {
+    mySum = mySum + i * i;
+  }
+  return mySum;
+}
+
 // 5) Find the largest/smallest/average number in the given array. (array as parameter)
 // small
 function min(arr){
@@ -64,6 +73,23 @@ for(var i = 0; i < arr.length; i++) {
 var avg = total / arr.length;
 return avg;
 }
-// 6) Return a string whose length maximum in the list of array of strings.
+// 6) Return a string whose length is maximum in the list of array of strings.
+function maxStringLength(arr){
+  var max = arr[0].length
+  var arrindex = 0;
+	for(i=0;i<arr.length;i++){
+	if(arr[i].length > max){
+    max = arr[i].length;
+    arrindex = i;
+	}
+ }
+	return arr[arrindex];}
 
 // 7) Write a programe to reverse the elements in the array.
+function arrReverse(arr){
+  revarr=[];
+for(var i = arr.length-1;i >= 0; i--){
+revarr.push(arr[i]);
+}
+return revarr;
+}
