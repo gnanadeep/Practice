@@ -23,7 +23,8 @@ setInterval(function() {
 function Book(id,name,author,price,genre){
     this.id = id;
     this.name = name;
-    this.author = price;
+    this.author = author;
+    this.price = price;
     this.genre = genre;
     this.getId = function(){return id;}
     this.getName = function(){return name;}
@@ -38,10 +39,23 @@ function Book(id,name,author,price,genre){
     }
 // 6) Create some number of objects using the above class.
 //     Write a function to know the no of objects created using the above class.
-
+var book= new Book(1,'english','author1',10,'study')
+var book1 = new Book(2,'spanish','author2',20,'read')
+var book2 = new Book(3,'french','author3',30,'learn')
 // 7) Put the created books objects into an array.
-//     Write a single function which takes a paramter which is attribute key {example "name" / "author"] to list out the that property value of all objects in the array.
- 
+//     Write a single function which takes a paramter which is attribute key {example "name" / "author"] to
+//  list out the that property value of all objects in the array. 
+var arr = [book,book1,book2]
+function values(key){
+for(var i=0; i<arr.length;i++){
+  console.log(arr[i][key]);
+}
+}
+values("id")
+values("name")
+values("author")
+values("price")
+values("genre")
 // Exampel: 
 // 1) listout("names");
 // log all books names.
@@ -49,7 +63,12 @@ function Book(id,name,author,price,genre){
 // log all books prices.
 
 // 8) Sort the books in the array by using its prices. (ascending)
+var sorted = arr.sort(function(a, b){
+    return a.price > b.price;
+  });
+  console.log(sorted)
 // 9) Sort the books using prices , if prices are same then use name.
+
 
 // 10) Write a function to remove duplicate books in the array , if id is same for two books, then you can remove one of them.
 
