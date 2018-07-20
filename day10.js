@@ -19,9 +19,23 @@ setInterval(function() {
 
 // 5) Write a programe to create a class for Book having properties as id, name, author, price, genre
 //     along with methods to get and set those properties.
-  
 //     create an object using the above class and setting the properties of object using constructor.
-
+function Book(id,name,author,price,genre){
+    this.id = id;
+    this.name = name;
+    this.author = price;
+    this.genre = genre;
+    this.getId = function(){return id;}
+    this.getName = function(){return name;}
+    this.getAuthor = function(){return author;}
+    this.getPrice = function(){return price;}
+    this.getGenre = function(){return genre;}
+    this.setId = function(setid){ id = setid;}
+    this.setName = function(setname){ name = setname;}
+    this.setAuthor = function(setauthor){ author = setauthor;}
+    this.setPrice = function(setprice){ price = setprice;}
+    this.setGenre = function(setgenre){ genre = setgenre;}
+    }
 // 6) Create some number of objects using the above class.
 //     Write a function to know the no of objects created using the above class.
 
