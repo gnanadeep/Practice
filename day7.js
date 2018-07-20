@@ -59,5 +59,17 @@ function removeDup(arr){
     return arr.filter((a,i) => arr.indexOf(a) == i )
     }
 // 15) Create a duplicate array with elements between the given two indexs..
-
+function dupelements(arr,a,b){
+	var dup = []; 
+  for(var i=a+1;i<b;i++){
+	dup.push(arr[i]);
+}
+return dup;}
 // 16) Implement splice and slice functions with different names as spliceNew , sliceNew
+function spliceNew(arr,a,b){
+	var dup = []; 
+  for(var i=a;i<b;i++){
+	dup.push(arr[i]);
+}
+arr = dup;
+return arr;}
