@@ -66,10 +66,3 @@ function dupelements(arr,a,b){
 }
 return dup;}
 // 16) Implement splice and slice functions with different names as spliceNew , sliceNew
-function spliceNew(arr,a,b){
-	var dup = []; 
-  for(var i=a;i<b;i++){
-	dup.push(arr[i]);
-}
-arr = dup;
-return arr;}
