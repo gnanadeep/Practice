@@ -4,7 +4,7 @@
 setInterval(function() {
     console.log(new Date());
 }, 5000);
-// 3)  Write 3 different  programes to print the greetings as 
+// 3) Write 3 different  programes to print the greetings as 
 // "Good Morining",
 // "Good Afternoon", 
 // "Good evening"
@@ -12,7 +12,17 @@ setInterval(function() {
 
 // Take differnt times each message using differnt timeout function to acheive this.
 
-
+function morning(){
+    console.log("Good Morning");
+  }
+  function afternoon(){
+    console.log("Good Afternoon");
+  }
+  function night(){
+    console.log("Good Night");
+  }
+  
+  
 // 4) Write a function to print array elemnets with a time gap of 3 seconds 
 //   => Write this programe using setInterval {you can use global variables for varible declarations}
 //   => write this programe using setTimeout.
@@ -69,8 +79,20 @@ var sorted = arr.sort(function(a, b){
   console.log(sorted)
 // 9) Sort the books using prices , if prices are same then use name.
 
-
+var sortedName = arr.sort(function(a, b){
+    if(a.price != b.price){
+        return a.price > b.price;
+    }else{
+        return a.name > b.name;
+    }
+    
+  });
+  console.log(sortedName)
 // 10) Write a function to remove duplicate books in the array , if id is same for two books, then you can remove one of them.
 
 
 
+// function removeDuplicates(arr) {
+//     return arr.filter(function(a,i){return indexOf(a.id) == i; });
+// }
+// console.log(arr);// not running
