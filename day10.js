@@ -1,4 +1,14 @@
 // 1) List out numbers from 1 to 10 , with a time between two prints is 3 seconds.
+var a = 0;
+function increment(){
+
+if(a < 10){
+console.log(a);
+}
+a++
+}
+
+setInterval(increment,3000)
 
 // 2) log time for every 5 seconds. (use  new Date() ) untill you stop explictly.
 setInterval(function() {
@@ -13,19 +23,50 @@ setInterval(function() {
 // Take differnt times each message using differnt timeout function to acheive this.
 
 function morning(){
-    console.log("Good Morning");
-  }
-  function afternoon(){
-    console.log("Good Afternoon");
-  }
-  function night(){
-    console.log("Good Night");
-  }
+  console.log("Good Morning");
+}
+function afternoon(){
+  console.log("Good Afternoon");
+}
+function night(){
+  console.log("Good Night");
+}
+
+function display(){
+setTimeout(morning,3000);
+setTimeout(afternoon,5000);
+setTimeout(night,1000);
+}
+
   
   
 // 4) Write a function to print array elemnets with a time gap of 3 seconds 
 //   => Write this programe using setInterval {you can use global variables for varible declarations}
 //   => write this programe using setTimeout.
+
+// using setInterval
+var arr = [1,2,3,4]
+var a = 0;
+function increment(){
+    if(a < arr.length){
+      console.log(arr[a]);
+    }
+  a++;
+}
+setInterval(increment,1000);
+
+// using setTimeout
+var arr = [1,2,3,4]
+var a = 0;
+
+(function loop() {
+  
+    if (a < arr.length) {
+        setTimeout(loop, 3000);
+      console.log(arr[a]);
+      a++;
+    }
+})();
 
 // 5) Write a programe to create a class for Book having properties as id, name, author, price, genre
 //     along with methods to get and set those properties.
