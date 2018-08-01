@@ -21,7 +21,8 @@ var counter = Counter();
 var obj = {
     arr : [1,2,3,4],
     sum : function(){
-       return this.arr.reduce((acc,cur) => acc + cur );
+       for (var i = 0, sum = 0; i < this.arr.length; sum += this.arr[i++]);
+		return sum;
     }
 }
 // 4) Create a new  student object which has properties such as name, rollno, marks in one property.
