@@ -19,16 +19,10 @@ var counter = Counter();
 // 3) create an object having 2  properties, one contains array of numbers. the other 
 //  is a method is used to calculate the sum of the array elements in the above mentioned property.
 var obj = {
-<<<<<<< HEAD
     arr: [1, 2, 3, 4],
     sum: function () {
-        return this.arr.reduce((acc, cur) => acc + cur);
-=======
-    arr : [1,2,3,4],
-    sum : function(){
-       for (var i = 0, sum = 0; i < this.arr.length; sum += this.arr[i++]);
-		return sum;
->>>>>>> a8825b78720ceb1bb52c79ace66ef36a29802533
+        for (var i = 0, sum = 0; i < this.arr.length; sum += this.arr[i++]);
+        return sum;
     }
 }
 // 4) Create a new  student object which has properties such as name, rollno, marks in one property.
@@ -39,9 +33,5 @@ var student = {
 }
 // 5) Caclaute the sum of marks by using call and apply methods.
 
-<<<<<<< HEAD
 obj.sum.call(student.marks)
 // 6) Try to create a counter using IIFE.
-=======
-// 6) Try to create a counter using IIFE.
->>>>>>> a8825b78720ceb1bb52c79ace66ef36a29802533
