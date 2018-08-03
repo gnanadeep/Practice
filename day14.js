@@ -2,6 +2,7 @@
 // /************* Use only let and const  to write below programmes *********/
 // 1) Write two functions to calculate the area and perimeter of a circle takes the radius 
 // as parameter.
+let area = r =>   Math.PI*r*r;
 
 // 2) Write a function to create a copy of an object by iterating over the keys of an it.
 // 3) Write a function to print the output as follows for the given no of rows with a given 
